@@ -1,0 +1,29 @@
+{
+  "name": "backend-tercer-proyecto",
+  "version": "1.0.0",
+  "description": "DocEngine-X - Generador de documentos PDF con queue tasks",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "worker": "node --watch src/worker/worker.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.600.0",
+    "bullmq": "^5.76.5",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "handlebars": "^4.7.8",
+    "nodemon": "^3.1.14",
+    "pg": "^8.13.3",
+    "puppeteer": "^22.0.0",
+    "redis": "^5.12.1",
+    "socket.io": "^4.7.5",
+    "socketio": "^1.0.0"
+  }
+}

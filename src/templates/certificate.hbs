@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div class="certificado">
+    <div class="logo">DocEngine-X · Certificados Oficiales</div>
+
+    <div class="titulo-cert">CERTIFICADO</div>
+    <div class="subtitulo">de {{tipo_certificado}}</div>
+
+    <div class="se-otorga">Se certifica que</div>
+    <div class="nombre">{{nombre}}</div>
+
+    <div class="descripcion">ha completado satisfactoriamente el programa</div>
+    <div class="curso">{{curso}}</div>
+
+    <div class="detalles">
+      <div>Duración<strong>{{duracion}}</strong></div>
+      <div>Calificación<strong>{{calificacion}}</strong></div>
+      <div>Fecha<strong>{{fecha}}</strong></div>
+    </div>
+
+    <div class="firma-section">
+      <div class="firma">
+        <div class="linea-firma"></div>
+        <p>{{firmante_1}}</p>
+        <p>{{cargo_1}}</p>
+      </div>
+      <div class="firma">
+        <div class="linea-firma"></div>
+        <p>{{firmante_2}}</p>
+        <p>{{cargo_2}}</p>
+      </div>
+    </div>
+
+    <div class="footer">ID: {{id_certificado}} · Verificable en docengine-x.com</div>
+  </div>
+</body>
+</html>

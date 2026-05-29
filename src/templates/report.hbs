@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div class="header">
+    <h1>{{titulo}}</h1>
+    <p>{{descripcion}}</p>
+  </div>
+
+  <div class="meta">
+    <div class="meta-item">
+      <h4>Autor</h4>
+      <p>{{autor}}</p>
+    </div>
+    <div class="meta-item">
+      <h4>Fecha</h4>
+      <p>{{fecha}}</p>
+    </div>
+    <div class="meta-item">
+      <h4>Período</h4>
+      <p>{{periodo}}</p>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <h3>Resumen Ejecutivo</h3>
+    <p>{{resumen}}</p>
+  </div>
+
+  {{#if datos}}
+  <div class="seccion">
+    <h3>Datos del Reporte</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Métrica</th>
+          <th>Valor</th>
+          <th>Observación</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each datos}}
+        <tr>
+          <td>{{metrica}}</td>
+          <td>{{valor}}</td>
+          <td>{{observacion}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+  {{/if}}
+
+  <div class="seccion">
+    <h3>Conclusiones</h3>
+    <p>{{conclusiones}}</p>
+  </div>
+
+  <div class="footer">
+    <p>DocEngine-X · Reporte generado el {{fecha}}</p>
+  </div>
+</body>
+</html>
